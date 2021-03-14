@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vòng lặp lồng nhau</title>
+</head>
+<body>
+    <script>
+        let table2;
+        let i=1, j=1;
+        table2 = "<table width='300px' border='1px' cellpadding='2' cellspacing='0'>"
+        while (i<=10){
+            table2= table2 + "<tr>";
+               j=1;
+               while (j<=10){
+                table2= table2 + "<td>" + i*j + "</td>";
+                j++;
+               }
+            table2 =table2 + "</tr>";
+            i++;
+        }
+        table2= table2 + "</table>";
+        document.write(table2);
+
+    </script>
+</body>
+</html>
